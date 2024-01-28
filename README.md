@@ -14,3 +14,15 @@ When clicked the associated snippet is run the current active terminal or a new 
 
 
 *This extension is not actively maintained but contributions are welcome!*
+
+## buid
+
+install vsce
+```sh
+npm install -g @vscode/vsce
+```
+
+build
+```sh
+vsce package
+```
