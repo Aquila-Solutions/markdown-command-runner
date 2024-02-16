@@ -31,7 +31,8 @@ export class CommandCodeLensProvider implements vscode.CodeLensProvider {
                 continue;
             }
 
-            if (line.startsWith('```') || line.startsWith('```sh') || line.startsWith('```bash')) {
+            //if (line.startsWith('```') || line.startsWith('```sh') || line.startsWith('```bash')) {
+            if (line.match(/^```.*sh$/)) {
                 inCommand = true;
                 commandStartLine = i;
                 continue;
